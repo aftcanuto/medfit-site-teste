@@ -1,0 +1,8 @@
+{
+  "/page": "app/page.js",
+  "/vo2/page": "app/vo2/page.js",
+  "/performance/page": "app/performance/page.js",
+  "/emagrecimento/page": "app/emagrecimento/page.js",
+  "/avaliacao/page": "app/avaliacao/page.js",
+  "/sobre-a-medfit/page": "app/sobre-a-medfit/page.js"
+}
