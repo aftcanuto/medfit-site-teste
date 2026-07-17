@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  body { @apply bg-bege text-ink font-sans; font-size: 16px; }
+  * { @apply box-border; }
+}
+
+@layer components {
+  .wrap    { @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-10; }
+  .sec-py  { @apply py-12 md:py-16 lg:py-24; }
+  .eyebrow { @apply text-[11px] font-medium tracking-[0.16em] uppercase text-verde; }
+  .eyebrow-w { @apply text-[11px] font-medium tracking-[0.16em] uppercase text-verde-mid; }
+  .eyebrow-m { @apply text-[11px] font-medium tracking-[0.16em] uppercase text-ink-faint; }
+
+  .btn-ink {
+    @apply inline-flex items-center gap-2 bg-ink text-white
+           px-6 py-3.5 rounded-full text-[13px] font-medium
+           transition-all duration-200 hover:bg-ink-mid hover:-translate-y-0.5 active:translate-y-0;
+  }
+  .btn-verde {
+    @apply inline-flex items-center gap-2 bg-verde text-white
+           px-6 py-3.5 rounded-full text-[13px] font-medium
+           transition-all duration-200 hover:bg-verde-dark hover:-translate-y-0.5;
+  }
+  .btn-white {
+    @apply inline-flex items-center gap-2 bg-white text-ink
+           px-6 py-3.5 rounded-full text-[13px] font-medium
+           transition-all duration-200 hover:bg-bege-light hover:-translate-y-0.5;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 text-ink-muted text-[13px] font-medium
+           transition-colors duration-200 hover:text-ink;
+  }
+}
+
+/* ── Scroll reveal ───────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1),
+              transform 0.8s cubic-bezier(0.16,1,0.3,1);
+}
+.reveal.in-view { opacity: 1; transform: translateY(0); }
+.d1 { transition-delay: 80ms; }
+.d2 { transition-delay: 160ms; }
+.d3 { transition-delay: 240ms; }
+.d4 { transition-delay: 320ms; }
+.d5 { transition-delay: 400ms; }
+
+/* ── Hero entrance ───────────────────── */
+@keyframes heroUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.ha1 { animation: heroUp 1s cubic-bezier(0.16,1,0.3,1) 0.05s both; }
+.ha2 { animation: heroUp 1s cubic-bezier(0.16,1,0.3,1) 0.18s both; }
+.ha3 { animation: heroUp 1s cubic-bezier(0.16,1,0.3,1) 0.32s both; }
+.ha4 { animation: heroUp 1s cubic-bezier(0.16,1,0.3,1) 0.12s both; }
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50%      { transform: translateY(-9px); }
+}
+.float-card { animation: float 5s ease-in-out infinite; }
+
+/* ── Dot grid texture ────────────────── */
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(0,0,0,0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* ── WhatsApp pulse ──────────────────── */
+@keyframes waPulse {
+  0%   { transform: scale(1);   opacity: 0.4; }
+  70%  { transform: scale(1.7); opacity: 0; }
+  100% { transform: scale(1.7); opacity: 0; }
+}
+.wa-pulse::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #1D9E75;
+  animation: waPulse 2.2s ease-out infinite;
+  z-index: -1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity:1; transform:none; transition:none; }
+  .ha1,.ha2,.ha3,.ha4 { animation:none; opacity:1; }
+  .float-card { animation:none; }
+  .wa-pulse::before { animation:none; }
+}
