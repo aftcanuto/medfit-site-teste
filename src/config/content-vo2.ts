@@ -5,7 +5,7 @@
 
 export const VO2 = {
   hero: {
-    eyebrow:     "Teste de VO₂Max com ventilometria",
+    eyebrow:     "Teste de VO₂máx com ventilometria",
     title:       "Treinar melhor começa por compreender sua fisiologia.",
     titleAccent: "Avalie, entenda, evolua.",
     description: "O teste de VO₂máx avalia como o organismo responde ao esforço e fornece informações importantes sobre condicionamento cardiorrespiratório, saúde e desempenho. Além do VO₂máx, analisamos limiares ventilatórios, zonas individualizadas, VAM e recuperação da frequência cardíaca.",
@@ -18,10 +18,10 @@ export const VO2 = {
   features: {
     eyebrow: "O que o exame entrega",
     title:   "Muito mais do que um número.",
-    body:    "O relatório do teste de VO₂max na MedFit inclui todos os parâmetros necessários para uma prescrição de treino precisa e segura.",
+    body:    "O relatório do teste de VO₂máx na MedFit inclui todos os parâmetros necessários para uma prescrição de treino precisa e segura.",
     items: [
       {
-        title:       "VO₂max — Volume Máximo de Oxigênio",
+        title:       "VO₂máx — Volume Máximo de Oxigênio",
         description: "Importância: O VO₂máx é um fator limitante do desempenho em esportes de resistência. Melhorar o VO2 máx aumenta a capacidade do atleta de realizar exercícios aeróbicos intensos por mais tempo.",
       },
       {

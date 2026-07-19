@@ -5,8 +5,8 @@
 
 export const MEDICINA = {
   hero: {
-    eyebrow:     "Medicina Concierge",
-    title:       "Medicina MedFit",
+    eyebrow:     "Medicina MedFit",
+    title:       "Nossa essência",
     titleAccent: "Cuidado médico individualizado.",
     description: "Na MedFit, a medicina é conduzida com escuta, avaliação e acompanhamento real. Atendimento presencial e online, com foco em saúde clínica, emagrecimento e acompanhamento metabólico, prática esportiva, prevenção e orientação individualizada.",
     image:       "/fotos/medica1.jpg",
@@ -41,8 +41,8 @@ export const MEDICINA = {
         description: "Revisão de exames anteriores, solicitação de novos exames quando necessário e acompanhamento da evolução clínica de forma organizada e individualizada.",
       },
       {
-        title:       "Consulta online",
-        description: "Atendimento médico por teleconsulta para situações elegíveis, com orientação, acompanhamento e condutas realizadas dentro dos critérios permitidos.",
+        title:       "Medicina concierge",
+        description: "Acompanhamento médico personalizado, com acesso facilitado, monitoramento contínuo e condutas individualizadas para quem busca um cuidado mais próximo, ágil e focado na saúde a longo prazo.",
       },
     ],
   },
@@ -74,7 +74,7 @@ export const MEDICINA = {
   },
 
   cta: {
-    title:  "Avaliar antes de prescrever. Acompanhar para evoluir.",
+    title:  "Avaliar para compreender. Acompanhar para transformar.",
     body:   "O cuidado médico na MedFit começa pela compreensão da pessoa, dos seus exames, da sua rotina e dos seus objetivos. A partir disso, a conduta é construída com mais segurança, clareza e responsabilidade.",
     button: { label: "Agendar consulta", href: "https://wa.me/5531995995428" },
   },

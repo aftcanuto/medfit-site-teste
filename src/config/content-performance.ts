@@ -30,7 +30,7 @@ export const PERFORMANCE = {
       },
       {
         title:       "Capacidade aeróbica",
-        description: "Testes de VO₂max, limiar anaeróbio e zonas de frequência cardíaca para prescrição precisa.",
+        description: "Testes de VO₂máx, limiar anaeróbio e zonas de frequência cardíaca para prescrição precisa.",
       },
       {
         title:       "Composição corporal",
@@ -53,13 +53,13 @@ export const PERFORMANCE = {
     steps: [
       {
         number:      "01",
-        title:       "Avaliação inicial",
+        title:       "Anamnese detalhada",
         description: "Histórico esportivo, lesões anteriores, objetivos e data do evento ou prova.",
       },
       {
         number:      "02",
-        title:       "Bateria de testes",
-        description: "Testes físicos específicos para o esporte ou prova: força, velocidade, resistência.",
+        title:       "Exames e testes",
+        description: "Exames e testes físicos específicos para o esporte ou prova: força, velocidade, resistência.",
       },
       {
         number:      "03",

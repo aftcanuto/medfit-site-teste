@@ -283,7 +283,7 @@ export const FOOTER = {
     ],
   },
   legal: "MedFit Saúde e Bem-estar · Belo Horizonte, MG",
-  responsavelTecnico: "Responsável técnica: Dra. Denise Nunes Lacerda — CRM-MG nº 109474",  // ← editar responsável técnico
+  responsavelTecnico: "Responsável técnica: Dra. Denise Nunes Lacerda — CRM-MG 109474",  // ← editar responsável técnico
 };
 
 
@@ -321,7 +321,7 @@ Denise é médica, com formação continuada em Endocrinologia e Medicina do Esp
   atendimento: {
     eyebrow: "Como atendemos",
     title:   "Cuidado integrado ou independente.",
-    body:    "Atendemos de forma presencial e online, com serviços que podem acontecer de forma compartilhada ou independente. Alguns pacientes são acompanhados pela medicina e pela Educação Física de forma integrada, enquanto outros utilizam apenas um dos serviços, conforme sua necessidade. Em todos os casos, o cuidado é individualizado, baseado em avaliação e acompanhamento real.",
+    body:    "Atendemos de forma presencial e online, com serviços que podem acontecer de forma compartilhada ou independente. Alguns pacientes são acompanhados pela medicina e pela educação física de forma integrada, enquanto outros utilizam apenas um dos serviços, conforme sua necessidade. Em todos os casos, o cuidado é individualizado, baseado em avaliação e acompanhamento real.",
   },
 
   fotos: [

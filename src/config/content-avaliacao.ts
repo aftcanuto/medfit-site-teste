@@ -21,21 +21,21 @@ export const AVALIACAO = {
     title:   "Avaliações por objetivo.",
     body:    "Cada momento pede uma avaliação diferente. Identifique o seu objetivo e veja por onde começar.",
     items: [
-      "Avaliação para começar a treinar",     // ← editar itens
-      "Avaliação para emagrecimento",
-      "Avaliação para corrida",
-      "Avaliação de performance",
-      "Avaliação funcional para longevidade",
-      "Avaliação para idosos",
-      "Avaliação para retorno ao esporte",
-      "Avaliação para TAF",
+      "Avaliação completa premium",     // ← editar itens
+      "Para emagrecimento",
+      "Para corrida",
+      "Para performance",
+      "Para começar a treinar",
+      "Para idosos",
+      "Para retorno ao esporte",
+      "Para TAF",
     ],
   },
 
   features: {
     eyebrow: "Avaliações disponíveis",
-    title:   "Uma avaliação para cada objetivo.",
-    body:    "Condutas mais seguras, eficientes e individualizadas.",
+    title:   "Equipamentos e tecnologias que ampliam a precisão dos resultados",
+    body:    "Equipamentos modernos aliados ao conhecimento clínico para gerar dados confiáveis e condutas individualizadas.",
     items: [
       {
         title:       "Avaliação clínica esportiva",

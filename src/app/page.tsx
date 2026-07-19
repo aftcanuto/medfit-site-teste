@@ -15,8 +15,8 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <VideoSection />
         <QuemSomosSection />
+        <VideoSection />
         <ServicesSection />
         <MethodSection />
         <FAQSection />
