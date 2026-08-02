@@ -6,7 +6,7 @@
 export const SITE = {
   name: "MedFit",
   fullName: "MedFit Saúde e Bem-estar",
-  url: "https://medfit-site-teste.vercel.app",  // ← quando o domínio oficial entrar no ar, trocar por "https://medfit.med.br"
+  url: "https://medfit.med.br",
   description: "Medicina (clínica médica, endocrinologia e medicina do esporte), emagrecimento, performance, TAF, teste de VO₂max e avaliação física em Belo Horizonte e Online.",
   whatsapp: "https://wa.me/5531995995428",
   instagram: "https://instagram.com/medfitsaude",
@@ -35,7 +35,7 @@ export const NAV = {
     { label: "Teste de VO₂máx",  href: "/vo2"    },
     { label: "Avaliações",       href: "/avaliacao"},  // ← editar nome e URL
   ],
-  store: { href: "https://avaliacao.medfit.med.br/catalogo", label: "Serviços MedFit" },
+  store: { href: "https://avaliacao.medfit.med.br/catalogo", label: "Serviços MedFit", enabled: false },  // ← "enabled: false" remove temporariamente o ícone/link da loja do menu e rodapé; volte para "true" quando quiser reativar
   cta: { label: "Agendar consulta", href: "/contato" },
 };
 
@@ -279,7 +279,7 @@ export const FOOTER = {
       { label: "Início",        href: "/"                },
       { label: "Quem somos",    href: "/sobre-a-medfit"  },
       { label: "Contato",       href: "/contato"         },
-      { label: "Serviços MedFit", href: "https://avaliacao.medfit.med.br/catalogo" },
+      // { label: "Serviços MedFit", href: "https://avaliacao.medfit.med.br/catalogo" },  // ← removido temporariamente, descomente para reativar
     ],
   },
   legal: "MedFit Saúde e Bem-estar · Belo Horizonte, MG",

@@ -63,12 +63,14 @@ export default function Header() {
                 ))}
               </nav>
               <div className="flex items-center gap-3">
-                <Link href={NAV.store.href} aria-label={NAV.store.label}
-                      target="_blank" rel="noopener noreferrer"
-                      className="w-9 h-9 rounded-xl border border-ink-border flex items-center justify-center
-                                 text-ink-muted hover:text-verde hover:border-verde/40 transition-all duration-200">
-                  <ShoppingBag size={16} strokeWidth={1.75} />
-                </Link>
+                {NAV.store.enabled && (
+                  <Link href={NAV.store.href} aria-label={NAV.store.label}
+                        target="_blank" rel="noopener noreferrer"
+                        className="w-9 h-9 rounded-xl border border-ink-border flex items-center justify-center
+                                   text-ink-muted hover:text-verde hover:border-verde/40 transition-all duration-200">
+                    <ShoppingBag size={16} strokeWidth={1.75} />
+                  </Link>
+                )}
                 <Link href={NAV.cta.href}
                       className="bg-verde text-white px-5 py-2.5 rounded-full text-[13px] font-medium
                                  transition-all duration-200 hover:bg-verde-dark whitespace-nowrap">
@@ -113,13 +115,15 @@ export default function Header() {
 
           {/* CTAs */}
           <div className="px-5 pb-10 pt-4 flex flex-col gap-3 border-t border-ink-border">
-            <Link href={NAV.store.href} onClick={() => setOpen(false)}
-                  target="_blank" rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 border border-ink-border
-                             rounded-full py-3.5 text-[14px] font-semibold text-ink-mid">
-              <ShoppingBag size={16} strokeWidth={1.75} />
-              {NAV.store.label}
-            </Link>
+            {NAV.store.enabled && (
+              <Link href={NAV.store.href} onClick={() => setOpen(false)}
+                    target="_blank" rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 border border-ink-border
+                               rounded-full py-3.5 text-[14px] font-semibold text-ink-mid">
+                <ShoppingBag size={16} strokeWidth={1.75} />
+                {NAV.store.label}
+              </Link>
+            )}
             <Link href={NAV.cta.href} onClick={() => setOpen(false)}
                   className="flex items-center justify-center bg-verde rounded-full
                              py-4 text-[15px] font-semibold text-white">
