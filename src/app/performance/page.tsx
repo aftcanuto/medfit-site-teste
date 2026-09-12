@@ -8,9 +8,26 @@ import { PERFORMANCE } from "@/config/content-performance";
 
 import type { Metadata } from "next";
 
+const TITLE = "TAF e Performance Esportiva em Belo Horizonte";
+const DESCRIPTION =
+  "Emitimos o atestado médico de aptidão física exigido pelo TAF: PMMG, Polícia Civil, Bombeiro Militar, Guarda Municipal, Polícia Penal e outros.";
+
 export const metadata: Metadata = {
-  title: "Performance e TAF",
-  description: "Acompanhamento para atletas, praticantes e candidatos a concursos: preparação para o TAF com dados objetivos de desempenho.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/performance/" },
+  openGraph: {
+    title: `${TITLE} | MedFit`,
+    description: DESCRIPTION,
+    url: "/performance/",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "MedFit Saúde e Bem-estar" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${TITLE} | MedFit`,
+    description: DESCRIPTION,
+    images: ["/og.png"],
+  },
 };
 
 export default function Page() {
@@ -22,6 +39,29 @@ export default function Page() {
       <Header />
       <main>
         <SubPageHero {...d.hero} />
+
+        {/* ── ATESTADO DE APTIDÃO FÍSICA — concursos ───────── */}
+        <section className="py-10 md:py-14 border-t border-bege-mid" style={{ background: "#F5EFE6" }}>
+          <div className="wrap">
+            <p className="eyebrow mb-3">{d.atestado.eyebrow}</p>
+            <h2 className="font-display text-display-lg text-ink leading-[1.1] mb-3">
+              {d.atestado.title}
+            </h2>
+            <p className="text-ink-muted text-[14px] leading-relaxed max-w-2xl mb-6">
+              {d.atestado.body}
+            </p>
+            <div className="flex flex-wrap gap-2.5">
+              {d.atestado.instituicoes.map((nome, i) => (
+                <span key={i}
+                      className="inline-flex items-center gap-2 bg-white border border-verde-border
+                                 rounded-full px-4 py-2 text-[13px] font-medium text-ink-mid">
+                  <span className="w-1.5 h-1.5 rounded-full bg-verde block flex-shrink-0" />
+                  {nome}
+                </span>
+              ))}
+            </div>
+          </div>
+        </section>
 
         {/* 4 cards sem foto */}
         <section className="bg-white sec-py border-t border-ink-border">

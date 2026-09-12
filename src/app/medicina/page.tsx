@@ -9,9 +9,26 @@ import { MEDICINA } from "@/config/content-medicina";
 
 import type { Metadata } from "next";
 
+const TITLE = "Medicina Concierge em Belo Horizonte";
+const DESCRIPTION =
+  "Consulta médica, avaliação clínica e acompanhamento individualizado em Belo Horizonte, sem filas. Agende sua consulta de Medicina Concierge com a MedFit.";
+
 export const metadata: Metadata = {
-  title: "Medicina Concierge",
-  description: "Consulta, avaliação clínica e acompanhamento médico individualizado em Belo Horizonte. Sem filas, com atenção real.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/medicina/" },
+  openGraph: {
+    title: `${TITLE} | MedFit`,
+    description: DESCRIPTION,
+    url: "/medicina/",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "MedFit Saúde e Bem-estar" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${TITLE} | MedFit`,
+    description: DESCRIPTION,
+    images: ["/og.png"],
+  },
 };
 
 export default function Page() {

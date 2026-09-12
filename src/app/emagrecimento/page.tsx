@@ -10,9 +10,26 @@ import { EMAGRECIMENTO } from "@/config/content-emagrecimento";
 
 import type { Metadata } from "next";
 
+const TITLE = "Emagrecimento com Acompanhamento Médico em BH";
+const DESCRIPTION =
+  "Tratamento de emagrecimento baseado em dados clínicos, composição corporal e acompanhamento médico contínuo. Agende sua avaliação de emagrecimento na MedFit.";
+
 export const metadata: Metadata = {
-  title: "Emagrecimento",
-  description: "Protocolo de emagrecimento baseado em dados: composição corporal, exercício e acompanhamento médico para resultados reais.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/emagrecimento/" },
+  openGraph: {
+    title: `${TITLE} | MedFit`,
+    description: DESCRIPTION,
+    url: "/emagrecimento/",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "MedFit Saúde e Bem-estar" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${TITLE} | MedFit`,
+    description: DESCRIPTION,
+    images: ["/og.png"],
+  },
 };
 
 export default function Page() {

@@ -7,9 +7,26 @@ import { CONTATO } from "@/config/content-contato";
 
 import type { Metadata } from "next";
 
+const TITLE = "Contato e Agendamento em Belo Horizonte";
+const DESCRIPTION =
+  "Agende sua consulta ou avaliação na MedFit pelo WhatsApp, Instagram ou e-mail. Endereço na Pampulha, Belo Horizonte, e horários de atendimento.";
+
 export const metadata: Metadata = {
-  title: "Contato e Agendamento",
-  description: "Agende sua consulta ou avaliação na MedFit — WhatsApp, Instagram, e-mail e endereço na Pampulha, Belo Horizonte.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/contato/" },
+  openGraph: {
+    title: `${TITLE} | MedFit`,
+    description: DESCRIPTION,
+    url: "/contato/",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "MedFit Saúde e Bem-estar" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${TITLE} | MedFit`,
+    description: DESCRIPTION,
+    images: ["/og.png"],
+  },
 };
 
 export default function Page() {
