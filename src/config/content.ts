@@ -93,7 +93,7 @@ export const SERVICES = {
     },
     {
       title:       "TAF",
-      description: "Emitimos o atestado de aptidão física exigido pelo edital para concursos como PMMG, Polícia Civil, Bombeiro Militar, Guarda Municipal e Polícia Penal, além de preparação física direcionada até a prova.",
+      description: "Emitimos o atestado médico de aptidão física exigido pelo edital para concursos como PMMG, Polícia Civil, Bombeiro Militar, Guarda Municipal e Polícia Penal, além de preparação física direcionada até a prova.",
       href:        "/performance",
       featured:    false,
     },
@@ -204,7 +204,7 @@ export const FAQ = {
     },
     {
       question: "O que é o TAF e como a MedFit ajuda?",
-      answer:   "O TAF (Teste de Aptidão Física) é a etapa eliminatória e classificatória de testes físicos em concursos públicos. Na MedFit, emitimos o atestado de aptidão física exigido pelo edital para concursos como PMMG, Polícia Civil, Corpo de Bombeiro Militar, Guarda Municipal, Polícia Penal e outros. Além disso, a preparação é liderada por um profissional com 25 anos de experiência militar: analisamos o seu edital, fazemos anamnese e testes específicos para coletar seus dados individualizados e, a partir dos resultados, direcionamos o treinamento para as exigências da prova, priorizando os pontos que precisam evoluir até a data do TAF.",
+      answer:   "O TAF (Teste de Aptidão Física) é a etapa eliminatória e classificatória de testes físicos em concursos públicos. Na MedFit, emitimos o atestado médico de aptidão física exigido pelo edital para concursos como PMMG, Polícia Civil, Corpo de Bombeiro Militar, Guarda Municipal, Polícia Penal e outros. Além disso, a preparação é liderada por um profissional com 25 anos de experiência militar: analisamos o seu edital, fazemos anamnese e testes específicos para coletar seus dados individualizados e, a partir dos resultados, direcionamos o treinamento para as exigências da prova, priorizando os pontos que precisam evoluir até a data do TAF.",
     },
     {
       question: "Como faço para agendar?",

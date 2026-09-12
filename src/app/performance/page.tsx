@@ -10,7 +10,7 @@ import type { Metadata } from "next";
 
 const TITLE = "TAF e Performance Esportiva em Belo Horizonte";
 const DESCRIPTION =
-  "Emitimos o atestado de aptidão física exigido pelo TAF: PMMG, Polícia Civil, Bombeiro Militar, Guarda Municipal, Polícia Penal e outros. Agende na MedFit.";
+  "Emitimos o atestado médico de aptidão física exigido pelo TAF: PMMG, Polícia Civil, Bombeiro Militar, Guarda Municipal, Polícia Penal e outros.";
 
 export const metadata: Metadata = {
   title: TITLE,

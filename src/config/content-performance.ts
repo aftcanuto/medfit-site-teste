@@ -8,18 +8,18 @@ export const PERFORMANCE = {
     eyebrow:     "TAF & Performance Esportiva",
     title:       "Preparação para o TAF",
     titleAccent: "Com dados, sem improviso.",
-    description: "Emitimos o atestado de aptidão física exigido pelo edital do TAF (Teste de Aptidão Física) para concursos como PMMG, Polícia Civil, Corpo de Bombeiro Militar, Guarda Municipal, Polícia Penal e outros, além de preparação para atletas e praticantes de esporte.",
+    description: "Emitimos o atestado médico de aptidão física exigido pelo edital do TAF (Teste de Aptidão Física) para concursos como PMMG, Polícia Civil, Corpo de Bombeiro Militar, Guarda Municipal, Polícia Penal e outros, além de preparação para atletas e praticantes de esporte.",
     image:       "/fotos/taf.jpg",
     imageAlt:    "Avaliação de performance esportiva na MedFit",
     cta:         { label: "Agendar avaliação", href: "https://wa.me/5531995995428" },
     imagePosition: "center 40%",  // ← ajusta o enquadramento no mobile (ex: center_20%, center_30%)
   },
 
-  // ─── ATESTADO DE APTIDÃO FÍSICA (concursos) ────────────────
+  // ─── ATESTADO MÉDICO DE APTIDÃO FÍSICA (concursos) ─────────
   atestado: {
-    eyebrow: "Atestado de Aptidão Física",
-    title:   "Atestado conforme exigido pelo edital",
-    body:    "Emitimos o atestado de aptidão física necessário para a etapa do TAF em concursos públicos, com avaliação médica e física de acordo com as exigências de cada edital.",
+    eyebrow: "Atestado Médico de Aptidão Física",
+    title:   "Atestado médico conforme exigido pelo edital",
+    body:    "Emitimos o atestado médico de aptidão física necessário para a etapa do TAF em concursos públicos, com avaliação médica e física de acordo com as exigências de cada edital.",
     instituicoes: [
       "PMMG",
       "Polícia Civil",
@@ -36,8 +36,8 @@ export const PERFORMANCE = {
     body:    "Cada avaliação gera dados objetivos sobre força, resistência, velocidade e recuperação — base para um treinamento mais eficiente.",
     items: [
       {
-        title:       "Atestado de Aptidão Física (TAF)",
-        description: "Emitimos o atestado exigido pelo edital para concursos como PMMG, Polícia Civil, Corpo de Bombeiro Militar, Guarda Municipal, Polícia Penal e outros.",
+        title:       "Atestado Médico de Aptidão Física (TAF)",
+        description: "Emitimos o atestado médico exigido pelo edital para concursos como PMMG, Polícia Civil, Corpo de Bombeiro Militar, Guarda Municipal, Polícia Penal e outros.",
       },
       {
         title:       "Avaliação de força",

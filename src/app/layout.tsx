@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     "performance esportiva",
     "avaliação funcional",
     "TAF",
-    "atestado de aptidão física",
-    "atestado de aptidão física PMMG",
+    "atestado médico de aptidão física",
+    "atestado médico de aptidão física PMMG",
     "medfit",
   ],
   alternates: {
@@ -72,9 +72,9 @@ const jsonLd = {
     "@type": "Offer",
     itemOffered: {
       "@type": "Service",
-      name: "Atestado de Aptidão Física para TAF",
+      name: "Atestado Médico de Aptidão Física para TAF",
       description:
-        "Atestado de aptidão física exigido pelo edital do TAF (Teste de Aptidão Física) para concursos como PMMG, Polícia Civil, Corpo de Bombeiro Militar, Guarda Municipal e Polícia Penal.",
+        "Atestado médico de aptidão física exigido pelo edital do TAF (Teste de Aptidão Física) para concursos como PMMG, Polícia Civil, Corpo de Bombeiro Militar, Guarda Municipal e Polícia Penal.",
       url: `${SITE.url}/performance/`,
     },
   },
