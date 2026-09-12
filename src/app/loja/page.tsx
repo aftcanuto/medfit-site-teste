@@ -10,6 +10,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Serviços MedFit",
   description: "Produtos e serviços MedFit.",
+  alternates: { canonical: "/loja/" },
+  // Página desativada temporariamente no menu — mantida fora de índice até ser reativada.
+  robots: { index: false, follow: false },
 };
 
 export default function Page() {

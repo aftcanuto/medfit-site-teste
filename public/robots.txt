@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /loja/
+
+Sitemap: https://medfit.med.br/sitemap.xml

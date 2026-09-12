@@ -7,9 +7,26 @@ import { SOBRE } from "@/config/content";
 
 import type { Metadata } from "next";
 
+const TITLE = "Quem Somos — Medicina e Educação Física";
+const DESCRIPTION =
+  "Conheça a MedFit: clínica que une medicina e educação física para um cuidado individualizado em Belo Horizonte. Saiba mais sobre nossa história e método.";
+
 export const metadata: Metadata = {
-  title: "Quem Somos",
-  description: "Conheça a MedFit: clínica que integra medicina e educação física na Pampulha, Belo Horizonte.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/sobre-a-medfit/" },
+  openGraph: {
+    title: `${TITLE} | MedFit`,
+    description: DESCRIPTION,
+    url: "/sobre-a-medfit/",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "MedFit Saúde e Bem-estar" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${TITLE} | MedFit`,
+    description: DESCRIPTION,
+    images: ["/og.png"],
+  },
 };
 
 export default function Page() {

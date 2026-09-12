@@ -9,9 +9,26 @@ import { AVALIACAO } from "@/config/content-avaliacao";
 
 import type { Metadata } from "next";
 
+const TITLE = "Avaliação Física e Clínica em Belo Horizonte";
+const DESCRIPTION =
+  "Avaliação física e clínica completa: bioimpedância, dinamometria, postura, flexibilidade e termografia em Belo Horizonte. Agende sua avaliação na MedFit.";
+
 export const metadata: Metadata = {
-  title: "Avaliações Físicas e Clínicas",
-  description: "Bioimpedância, dinamometria, VO₂max, avaliação postural, flexibilidade e termografia clínica em Belo Horizonte.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/avaliacao/" },
+  openGraph: {
+    title: `${TITLE} | MedFit`,
+    description: DESCRIPTION,
+    url: "/avaliacao/",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "MedFit Saúde e Bem-estar" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${TITLE} | MedFit`,
+    description: DESCRIPTION,
+    images: ["/og.png"],
+  },
 };
 
 export default function Page() {

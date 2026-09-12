@@ -5,14 +5,29 @@
 
 export const PERFORMANCE = {
   hero: {
-    eyebrow:     "Performance & TAF",
-    title:       "Prepare-se para render mais.",
+    eyebrow:     "TAF & Performance Esportiva",
+    title:       "Preparação para o TAF",
     titleAccent: "Com dados, sem improviso.",
-    description: "Avaliação e preparação para atletas, praticantes de esporte e candidatos ao TAF. Interpretamos os dados da avaliação para identificar o que realmente limita seu desempenho e direcionar o treinamento com mais precisão.",
+    description: "Emitimos o atestado de aptidão física exigido pelo edital do TAF (Teste de Aptidão Física) para concursos como PMMG, Polícia Civil, Corpo de Bombeiro Militar, Guarda Municipal, Polícia Penal e outros, além de preparação para atletas e praticantes de esporte.",
     image:       "/fotos/taf.jpg",
     imageAlt:    "Avaliação de performance esportiva na MedFit",
     cta:         { label: "Agendar avaliação", href: "https://wa.me/5531995995428" },
     imagePosition: "center 40%",  // ← ajusta o enquadramento no mobile (ex: center_20%, center_30%)
+  },
+
+  // ─── ATESTADO DE APTIDÃO FÍSICA (concursos) ────────────────
+  atestado: {
+    eyebrow: "Atestado de Aptidão Física",
+    title:   "Atestado conforme exigido pelo edital",
+    body:    "Emitimos o atestado de aptidão física necessário para a etapa do TAF em concursos públicos, com avaliação médica e física de acordo com as exigências de cada edital.",
+    instituicoes: [
+      "PMMG",
+      "Polícia Civil",
+      "Corpo de Bombeiro Militar",
+      "Guarda Municipal",
+      "Polícia Penal",
+      "e outros concursos",
+    ],
   },
 
   features: {
@@ -21,8 +36,8 @@ export const PERFORMANCE = {
     body:    "Cada avaliação gera dados objetivos sobre força, resistência, velocidade e recuperação — base para um treinamento mais eficiente.",
     items: [
       {
-        title:       "Teste de aptidão física (TAF)",
-        description: "Avaliação específica para concursos militares, policiais e demais processos seletivos físicos.",
+        title:       "Atestado de Aptidão Física (TAF)",
+        description: "Emitimos o atestado exigido pelo edital para concursos como PMMG, Polícia Civil, Corpo de Bombeiro Militar, Guarda Municipal, Polícia Penal e outros.",
       },
       {
         title:       "Avaliação de força",
